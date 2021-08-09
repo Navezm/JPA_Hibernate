@@ -18,6 +18,15 @@ public class Section {
     @Column(name = "delegate_id")
     private int delegate_id;
 
+    public Section() {
+    }
+
+    public Section(long section_id, String section_name, int delegate_id) {
+        this.section_id = section_id;
+        this.section_name = section_name;
+        this.delegate_id = delegate_id;
+    }
+
     public void setSection_id(Long section_id) {
         this.section_id = section_id;
     }
